@@ -20,13 +20,13 @@ var confirmLowerCase;
 function generatePassword() {
   var confirmLength = (prompt("How many characters would you like your password to contain?"));
 
-  // Loop if answer is outside the parameters 
+  // Loop: if the users answer is outside the parameters, this will tell them to choose the right number of characters.  
   while(confirmLength <= 7 || confirmLength >= 133) {
       alert("Password length must be between 8-132 characters Try again");
       var confirmLength = (prompt("How many characters would you like your password to contain?"));
       } 
 
-      // Repeat back how many charactes the user will have  
+      // Alert to confirm the numberof characters in the users password.   
       alert("Your password will have " + confirmLength + " characters.");
 
     // Determine parameters of password 
@@ -34,7 +34,8 @@ function generatePassword() {
     var confirmNumericCharacter = confirm("Click OK to confirm you would like to include numeric characters");    
     var confirmLowerCase = confirm("Click OK to confirm you would like to include lowercase characters");
     var confirmUpperCase = confirm("Click OK to confirm you would like to include uppercase characters");
-      // Loop if answer is outside the parameters 
+    
+    // Loop to catch if user answer is outside the parameters 
       while(confirmUpperCase === false && confirmLowerCase === false && confirmSpecialCharacter === false && confirmNumericCharacter === false) {
         alert("You must choose at least one parameter");
         var confirmSpecialCharacter = confirm("Click OK to confirm you would like to include special characters");
