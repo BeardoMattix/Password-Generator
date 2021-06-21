@@ -3,6 +3,9 @@
 ## Description
 For this assignment we were asked to create a random password generator that takes user inputs and creates a password. Users can choose the number of characters (8-132), and whether to include uppercase, lowercase, numbers, or special characters in their password. 
 
+## Link to Deployed Site
+![Random Password Generator](https://beardomattix.github.io/homework-week-3/"Random Password Generator")
+
 ## Process
 This project required a lot of research to understand which steps I needed to take in order to get the password generator to function properly. I started by setting up the arrays for the user inputs, then declaring the variables for the confirmations. By doing this it allowed me to have a better understanding of the logic I would write later. 
 
