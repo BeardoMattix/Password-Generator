@@ -1,4 +1,4 @@
-//This passwird generator will create a random password between 8 and 132 characters depending on the inputs the user chooses. 
+//This password generator will create a random password between 8 and 132 characters depending on the inputs the user chooses. 
 
 //Assignment Code + Event Listener to prompt questions when button pushed
 document.querySelector("#generate").addEventListener("click", writePassword);
@@ -30,17 +30,17 @@ function generatePassword() {
       alert("Your password will have " + confirmLength + " characters.");
 
     // Determine parameters of password 
-    var confirmSpecialCharacter = confirm("Click OK to confirm if you would like to include special characters");
-    var confirmNumericCharacter = confirm("Click OK to confirm if you would like to include numeric characters");    
-    var confirmLowerCase = confirm("Click OK to confirm if you would like to include lowercase characters");
-    var confirmUpperCase = confirm("Click OK to confirm if you would like to include uppercase characters");
+    var confirmSpecialCharacter = confirm("Click OK to confirm you would like to include special characters");
+    var confirmNumericCharacter = confirm("Click OK to confirm you would like to include numeric characters");    
+    var confirmLowerCase = confirm("Click OK to confirm you would like to include lowercase characters");
+    var confirmUpperCase = confirm("Click OK to confirm you would like to include uppercase characters");
       // Loop if answer is outside the parameters 
       while(confirmUpperCase === false && confirmLowerCase === false && confirmSpecialCharacter === false && confirmNumericCharacter === false) {
         alert("You must choose at least one parameter");
-        var confirmSpecialCharacter = confirm("Click OK to confirm if you would like to include special characters");
-        var confirmNumericCharacter = confirm("Click OK to confirm if you would like to include numeric characters");    
-        var confirmLowerCase = confirm("Click OK to confirm if you would like to include lowercase characters");
-        var confirmUpperCase = confirm("Click OK to confirm if you would like to include uppercase characters");   
+        var confirmSpecialCharacter = confirm("Click OK to confirm you would like to include special characters");
+        var confirmNumericCharacter = confirm("Click OK to confirm you would like to include numeric characters");    
+        var confirmLowerCase = confirm("Click OK to confirm you would like to include lowercase characters");
+        var confirmUpperCase = confirm("Click OK to confirm you would like to include uppercase characters");   
     } 
 
       // This will assign an action to the password parameters (based on user inputs).
